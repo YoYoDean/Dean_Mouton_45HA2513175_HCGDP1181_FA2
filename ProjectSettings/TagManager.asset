@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - UiManager
   - WaterBottle
+  - PressE
+  - WaterSound
+  - PickSound
   layers:
   - Default
   - TransparentFX

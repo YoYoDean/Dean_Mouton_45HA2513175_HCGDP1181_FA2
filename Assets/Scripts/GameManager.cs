@@ -7,11 +7,13 @@ public class GameManager : MonoBehaviour
     public float hydration = 100;
     public float npcRescue;
     public static GameManager instance;
+    public bool isCarrying;
 
 
     void Awake()
     {
         instance = this;
+        npcRescue = 0;
     }
     void Start()
 {
@@ -55,7 +57,18 @@ public class GameManager : MonoBehaviour
         }
         }
     }
-
+    public void UpdateNpc()
+    {
+        if(isCarrying)
+        {
+            npcRescue += 1;
+            Debug.Log(npcRescue);
+            UiManager.instance.UpdateNpcUi(npcRescue);
+            PlayerPrefs.SetFloat("NpcSave", PlayerPrefs.GetFloat("NpcSave") + npcRescue);
+            isCarrying = false;
+        }
+    }
+    
 
     public void UpdateHighScore()
     {

@@ -30,10 +30,12 @@ public class PlayerMove : MonoBehaviour
     public bool isGrounded;
 
     private float currentSpeed;
+    private Animator animator;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        animator = gameObject.GetComponent<Animator>();
 
         currentSpeed = speed;
 
@@ -71,6 +73,8 @@ public class PlayerMove : MonoBehaviour
             rb.position + moveDir * currentSpeed * Time.fixedDeltaTime;
 
         rb.MovePosition(targetPos);
+        animator.SetFloat("Walking", moveInput.magnitude, 0.1f, Time.deltaTime);
+        
     }
 
     void Look()

@@ -1000,6 +1000,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hydration: 100
+  npcRescue: 0
+  isCarrying: 0
 --- !u!1 &1366074935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,9 +1490,13 @@ MonoBehaviour:
   health: {fileID: 0}
   score: {fileID: 0}
   highScoreMain: {fileID: 976205882}
+  npcSaveMain: {fileID: 838901040}
   highScoreGameOver: {fileID: 976205882}
+  npcSaveGameOver: {fileID: 0}
   hydration: {fileID: 0}
   iScore: 0
+  promptText: {fileID: 0}
+  npcCarry: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
