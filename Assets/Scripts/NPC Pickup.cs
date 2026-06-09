@@ -28,7 +28,7 @@ public class NPCPickup : MonoBehaviour
             pressEKEy.GetComponent<TextMeshProUGUI>().enabled = false;
             GameManager.instance.isCarrying = true;
             gameObject.SetActive(false);
-            UiManager.instance.npcCarry.text = "Carrying 1 Person"; 
+            UiManager.instance.objective.text = "Objective: Carrying 1 Person -- Take to BUNKER"; 
             //isCarrying = true;
         }
     }

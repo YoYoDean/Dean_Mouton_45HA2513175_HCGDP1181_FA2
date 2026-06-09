@@ -11,6 +11,7 @@ public class Bunker : MonoBehaviour
         if (Keyboard.current.eKey.wasPressedThisFrame && inBox)
         {
             GameManager.instance.UpdateNpc();
+            UiManager.instance.objective.text = "Objective: Find People to Save -- Stay Hydrated!"; 
             
         }
     }

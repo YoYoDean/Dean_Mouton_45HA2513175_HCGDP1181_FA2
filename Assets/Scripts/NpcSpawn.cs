@@ -8,14 +8,22 @@ public class NpcSpawn : MonoBehaviour
 
     public Vector2 areaXSize = new Vector2(-35,91);
     public Vector2 areaZSize = new Vector2(-90,51);
-    public int numberOfNpc = 300;
-    
+    public int numberOfNpc = 20;
+    public static NpcSpawn instance;
 
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
-    {
-        
+    {       
+        Spawn();
+    }
 
+    public void Spawn()
+    {
         for (int i = 0; i < numberOfNpc; i++)
         {
             float xCor = Random.Range(areaXSize.x, areaXSize.y);
@@ -28,6 +36,5 @@ public class NpcSpawn : MonoBehaviour
 
             Instantiate(objToSpawn, new Vector3(xCor, -1.5f, zCor), randomRotation);
         }
-
     }
 }

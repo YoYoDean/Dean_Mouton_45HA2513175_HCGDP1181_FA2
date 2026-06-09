@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -55,6 +56,7 @@ public class GameManager : MonoBehaviour
             Health.instance.playerHealth -= Time.deltaTime/2;
             UiManager.instance.UpdateHealth(Health.instance.playerHealth);
         }
+        if(GameObject.FindGameObjectsWithTag("NPC").Count() <= 8) NpcSpawn.instance.Spawn();
         }
     }
     public void UpdateNpc()

@@ -10,6 +10,7 @@ TagManager:
   - PressE
   - WaterSound
   - PickSound
+  - NPC
   layers:
   - Default
   - TransparentFX

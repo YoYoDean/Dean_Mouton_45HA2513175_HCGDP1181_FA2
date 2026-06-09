@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FA1.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Start.unity
+    guid: 45917ec13329df14b816fa7090c32b68
   - enabled: 1
     path: Assets/Scenes/FA2.unity
     guid: 6c61861a2ceb08f48b80b0a338cd62f7
@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Over.unity
     guid: 66ab949844b23aa47867ccf1bca7a252
   - enabled: 1
-    path: Assets/Scenes/Start.unity
-    guid: 45917ec13329df14b816fa7090c32b68
+    path: Assets/Scenes/FA1.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

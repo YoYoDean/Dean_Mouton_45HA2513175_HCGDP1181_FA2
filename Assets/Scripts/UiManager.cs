@@ -18,6 +18,7 @@ public class UiManager : MonoBehaviour
     public static UiManager instance;
     public GameObject promptText;
     public TextMeshProUGUI npcCarry;
+    public TextMeshProUGUI objective;
 
 
 
